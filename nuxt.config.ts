@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'TwicPics x Nuxt3',
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
     }
   },
   css: ['@/assets/css/main.scss'],

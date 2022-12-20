@@ -49,7 +49,7 @@
 
 <script>
   const ONLINE_URL = `https://stackblitz.com/edit/github-wpprt7?file=`;
-  const GITHUB = `https://github.com/TwicPics/demo-components-nuxt2`;
+  const GITHUB = `https://github.com/TwicPics/demo-components-nuxt3`;
   export default {
     name: "TwicWrapper",
     props: {
