@@ -71,6 +71,7 @@
           <TwicImg
             src="https://assets.twicpics.com/demo/@twicpics-components/bot/robot.jpg"
             bot="cover=400x400"
+            preTransform="cover=400x300"
             :anchor="actualConfig.anchor" />
           <span> Bot will override anchor="{{ actualConfig.anchor }}"</span>
         </div>
@@ -85,7 +86,7 @@
       return {
         config: [
           {
-            anchor: undefined,
+            anchor: "center",
             preTransform: "flip=x",
             ratio: "4/3",
           },
