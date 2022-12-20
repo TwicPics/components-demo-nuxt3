@@ -1,0 +1,23 @@
+{
+  "name": "components-demo-nuxt3",
+  "author": "TwicPics <hello@twic.pics> (https://www.twicpics.com)",
+  "description": "Demonstration of TwicPics components in a Nuxt3 project.",
+  "license": "MIT",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "serve": "nuxt dev"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "@twicpics/components": "^0.14.1"
+  }
+}
