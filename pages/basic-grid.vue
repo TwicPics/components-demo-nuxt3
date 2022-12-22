@@ -1,6 +1,6 @@
 <template>
   <div id="twic-basic-grid-container">
-    <TwicWrapper git-hub-url="pages/basic-grid.vue">
+    <TwicWrapper filename="pages/basic-grid.vue">
       <TwicAbstract title="A basic example">
         <p>
           TwicPics is a Responsive Image Service Solution (SaaS) that enables
@@ -47,8 +47,7 @@
             src="/football.jpg"
             ratio="16/9"
             mode="cover"
-            placeholder="meancolor"
-          />
+            placeholder="meancolor" />
           <span>
             <TwicCode>ratio="16/9"</TwicCode>&<TwicCode>mode="cover"</TwicCode>:
             the image fills the area
@@ -69,8 +68,7 @@
             mode="contain"
             ratio="2/3"
             step="100"
-            placeholder="maincolor"
-          />
+            placeholder="maincolor" />
           <span>
             <TwicCode>ratio="2/3"</TwicCode
             >,<TwicCode>mode="contain"</TwicCode>&<TwicCode
@@ -84,16 +82,16 @@
 </template>
 
 <script>
-export default {
-  name: 'TwicBasicExample',
-}
+  export default {
+    name: "TwicBasicExample",
+  };
 </script>
 
 <style lang="scss">
-#twic-basic-grid-container {
-  .twic-item .twic-w {
-    background-color: #00ffa3;
-    display: block;
+  #twic-basic-grid-container {
+    .twic-item .twic-w {
+      background-color: #00ffa3;
+      display: block;
+    }
   }
-}
 </style>

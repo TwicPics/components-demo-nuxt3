@@ -1,6 +1,6 @@
 <template>
   <div id="twic-transition-container">
-    <TwicWrapper git-hub-url="pages/transition.vue">
+    <TwicWrapper filename="pages/transition.vue">
       <TwicAbstract title="transition properties">
         <p>
           <strong>
@@ -37,8 +37,7 @@
       <div class="twic-testing-container">
         <button
           class="twic-button"
-          @click="() => (showTransitions = !showTransitions)"
-        >
+          @click="() => (showTransitions = !showTransitions)">
           {{ showTransitions ? IMG_TEXT : TRANSITIONS_TEXT }}
         </button>
       </div>
@@ -75,8 +74,7 @@
           <TwicImg
             :src="IMG_URL"
             transition-duration="2000ms"
-            placeholder="preview"
-          />
+            placeholder="preview" />
           <span>
             <TwicCode>transitionDuration="2000ms"</TwicCode>
           </span>
@@ -86,8 +84,7 @@
             :src="IMG_URL"
             transition-duration="2000ms"
             transition-timing-function="linear"
-            placeholder="preview"
-          />
+            placeholder="preview" />
           <span>
             <TwicCode>transitionDuration="2000ms"</TwicCode>
             and<TwicCode>transitionTimingFunction="linear"</TwicCode>
@@ -98,8 +95,7 @@
             :src="IMG_URL"
             transition-delay="2000ms"
             transition-timing-function="linear"
-            placeholder="preview"
-          />
+            placeholder="preview" />
           <span>
             <TwicCode>transitionDelay="2000ms"</TwicCode>
           </span>
@@ -110,34 +106,34 @@
 </template>
 
 <script>
-export default {
-  name: 'TwicTransition',
-  data() {
-    return {
-      IMG_TEXT: `Click to show the images`,
-      IMG_URL: `components/peacock.jpg`,
-      TRANSITIONS_TEXT: `Click to reveal the transitions`,
-      showTransitions: false,
-      togglePlaceholderBtnText: `Click to reveal the transitions`,
-    }
-  },
-}
+  export default {
+    name: "TwicTransition",
+    data() {
+      return {
+        IMG_TEXT: `Click to show the images`,
+        IMG_URL: `components/peacock.jpg`,
+        TRANSITIONS_TEXT: `Click to reveal the transitions`,
+        showTransitions: false,
+        togglePlaceholderBtnText: `Click to reveal the transitions`,
+      };
+    },
+  };
 </script>
 
 <style lang="scss">
-#twic-transition-container {
-  .show-transitions {
-    .twic-tf img:hover {
-      opacity: 0 !important;
-    }
+  #twic-transition-container {
+    .show-transitions {
+      .twic-tf img:hover {
+        opacity: 0 !important;
+      }
 
-    .twic-tf img + div {
-      opacity: 1 !important;
-    }
+      .twic-tf img + div {
+        opacity: 1 !important;
+      }
 
-    .twic-tz img {
-      transform: scale(0) !important;
+      .twic-tz img {
+        transform: scale(0) !important;
+      }
     }
   }
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="twic-slideshow-container">
-    <TwicWrapper git-hub-url="pages/slideshow.vue">
+    <TwicWrapper filename="pages/slideshow.vue">
       <TwicAbstract title="A Picture Carousel">
         <p>
           Use TwicPics for automatic lazy-loading, CLS optimization and art

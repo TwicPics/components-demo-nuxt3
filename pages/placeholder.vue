@@ -1,6 +1,6 @@
 <template>
   <div id="twic-placeholder-container">
-    <TwicWrapper git-hub-url="pages/placeholder.vue">
+    <TwicWrapper filename="pages/placeholder.vue">
       <TwicAbstract title="placeholder property">
         <p>
           <strong>
@@ -31,8 +31,7 @@
       <div class="twic-testing-container">
         <button
           class="twic-button"
-          @click="() => (showPlaceholders = !showPlaceholders)"
-        >
+          @click="() => (showPlaceholders = !showPlaceholders)">
           {{
             showPlaceholders
               ? `Click to reveal images`
@@ -72,27 +71,27 @@
 </template>
 
 <script>
-export default {
-  name: 'TwicPlaceholder',
-  data() {
-    return {
-      IMG_URL: `components/cat.jpg`,
-      showPlaceholders: false,
-      togglePlaceholderBtnText: `Click to reveal the placeholders`,
-    }
-  },
-}
+  export default {
+    name: "TwicPlaceholder",
+    data() {
+      return {
+        IMG_URL: `components/cat.jpg`,
+        showPlaceholders: false,
+        togglePlaceholderBtnText: `Click to reveal the placeholders`,
+      };
+    },
+  };
 </script>
 
 <style lang="scss">
-#twic-placeholder-container {
-  .show-placeholders {
-    img {
-      visibility: hidden !important;
-    }
-    img + div {
-      opacity: 1 !important;
+  #twic-placeholder-container {
+    .show-placeholders {
+      img {
+        visibility: hidden !important;
+      }
+      img + div {
+        opacity: 1 !important;
+      }
     }
   }
-}
 </style>

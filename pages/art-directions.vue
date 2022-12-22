@@ -1,6 +1,6 @@
 <template>
   <div id="twic-art-direction-container">
-    <TwicWrapper git-hub-url="pages/art-directions.vue">
+    <TwicWrapper filename="pages/art-directions.vue">
       <TwicAbstract title="Art directions with CSS media queries">
         <p>
           Setting up components using CSS enables hassle-free responsive
@@ -26,46 +26,46 @@
 </template>
 
 <script>
-export default {
-  name: 'TwicArtDirections',
-  data() {
-    return {
-      IMG_URL: `components/greece.jpg`,
-    }
-  },
-}
+  export default {
+    name: "TwicArtDirections",
+    data() {
+      return {
+        IMG_URL: `components/greece.jpg`,
+      };
+    },
+  };
 </script>
 
 <style lang="scss">
-#twic-art-direction-container {
-  .style-driven-responsive {
-    --twic-ratio: calc(2 / 3);
-    --twic-mode: cover;
-    margin: auto;
-  }
-}
-
-#twic-art-direction-container .style-driven-responsive {
-  max-width: 1024px;
-
-  @media (min-width: 640px) {
-    --twic-ratio: calc(1);
+  #twic-art-direction-container {
+    .style-driven-responsive {
+      --twic-ratio: calc(2 / 3);
+      --twic-mode: cover;
+      margin: auto;
+    }
   }
 
-  @media (min-width: 768px) {
-    --twic-ratio: calc(4 / 3);
-  }
+  #twic-art-direction-container .style-driven-responsive {
+    max-width: 1024px;
 
-  @media (min-width: 1024px) {
-    --twic-ratio: calc(16 / 9);
-  }
+    @media (min-width: 640px) {
+      --twic-ratio: calc(1);
+    }
 
-  @media (min-width: 1280px) {
-    --twic-ratio: calc(1.85);
-  }
+    @media (min-width: 768px) {
+      --twic-ratio: calc(4 / 3);
+    }
 
-  @media (min-width: 1536px) {
-    --twic-ratio: calc(21 / 9);
+    @media (min-width: 1024px) {
+      --twic-ratio: calc(16 / 9);
+    }
+
+    @media (min-width: 1280px) {
+      --twic-ratio: calc(1.85);
+    }
+
+    @media (min-width: 1536px) {
+      --twic-ratio: calc(21 / 9);
+    }
   }
-}
 </style>

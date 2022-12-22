@@ -1,6 +1,6 @@
 <template>
   <div id="twic-style-driven-container">
-    <TwicWrapper git-hub-url="pages/style-driven.vue">
+    <TwicWrapper filename="pages/style-driven.vue">
       <TwicAbstract title="CSS style driven">
         <p>
           You can set up the TwicPics components using pure CSS and the power of
@@ -99,54 +99,54 @@
 </template>
 
 <script>
-export default {
-  name: 'TwicStyleDriven',
-  data() {
-    return {
-      IMG_URL: `components/horse.jpg`,
-    }
-  },
-}
+  export default {
+    name: "TwicStyleDriven",
+    data() {
+      return {
+        IMG_URL: `components/horse.jpg`,
+      };
+    },
+  };
 </script>
 
 <style lang="scss">
-#twic-style-driven-container {
-  .twic-grid {
-    margin-bottom: 60px;
+  #twic-style-driven-container {
+    .twic-grid {
+      margin-bottom: 60px;
+    }
+    .twic-item .twic-w {
+      background-color: #00ffa3;
+      display: block;
+    }
+    .landscape {
+      --twic-ratio: calc(4 / 3);
+    }
+    .portrait {
+      --twic-ratio: calc(3 / 4);
+    }
+    .square {
+      --twic-ratio: calc(1);
+    }
+    .contain {
+      --twic-mode: contain;
+    }
+    .cover {
+      --twic-mode: cover;
+    }
+    .left {
+      --twic-position: left;
+    }
+    .right {
+      --twic-position: right;
+    }
+    .lg {
+      width: 300px;
+    }
+    .md {
+      width: 150px;
+    }
+    .sm {
+      width: 100px;
+    }
   }
-  .twic-item .twic-w {
-    background-color: #00ffa3;
-    display: block;
-  }
-  .landscape {
-    --twic-ratio: calc(4 / 3);
-  }
-  .portrait {
-    --twic-ratio: calc(3 / 4);
-  }
-  .square {
-    --twic-ratio: calc(1);
-  }
-  .contain {
-    --twic-mode: contain;
-  }
-  .cover {
-    --twic-mode: cover;
-  }
-  .left {
-    --twic-position: left;
-  }
-  .right {
-    --twic-position: right;
-  }
-  .lg {
-    width: 300px;
-  }
-  .md {
-    width: 150px;
-  }
-  .sm {
-    width: 100px;
-  }
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="twic-mode-container">
-    <TwicWrapper git-hub-url="pages/mode.vue">
+    <TwicWrapper filename="pages/mode.vue">
       <TwicAbstract title="mode property">
         <p>
           <strong>
@@ -31,8 +31,7 @@
           <TwicImg
             v-if="show"
             :src="IMG_URL"
-            :mode="modeValues[modeIndex]"
-          ></TwicImg>
+            :mode="modeValues[modeIndex]"></TwicImg>
           <span>
             <TwicCode>mode="{{ modeValues[modeIndex] }}"</TwicCode>
           </span>
@@ -59,32 +58,32 @@
 </template>
 
 <script>
-export default {
-  name: 'TwicMode',
-  data() {
-    return {
-      IMG_URL: `components/fox.jpg`,
-      modeValues: [`cover`, `contain`],
-      modeIndex: 0,
-      // trick to force reload TwicImg
-      show: true,
-    }
-  },
-  methods: {
-    changeMode() {
-      setTimeout(() => (this.show = false))
-      this.modeIndex = (this.modeIndex + 1) % this.modeValues.length
-      setTimeout(() => (this.show = true))
+  export default {
+    name: "TwicMode",
+    data() {
+      return {
+        IMG_URL: `components/fox.jpg`,
+        modeValues: [`cover`, `contain`],
+        modeIndex: 0,
+        // trick to force reload TwicImg
+        show: true,
+      };
     },
-  },
-}
+    methods: {
+      changeMode() {
+        setTimeout(() => (this.show = false));
+        this.modeIndex = (this.modeIndex + 1) % this.modeValues.length;
+        setTimeout(() => (this.show = true));
+      },
+    },
+  };
 </script>
 
 <style lang="scss">
-#twic-mode-container {
-  .twic-item .twic-w {
-    background-color: #00ffa3;
-    display: block;
+  #twic-mode-container {
+    .twic-item .twic-w {
+      background-color: #00ffa3;
+      display: block;
+    }
   }
-}
 </style>

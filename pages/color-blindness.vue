@@ -1,6 +1,6 @@
 <template>
   <div id="twic-color-blindness-container">
-    <TwicWrapper git-hub-url="pages/color-blindness.vue">
+    <TwicWrapper filename="pages/color-blindness.vue">
       <TwicAbstract title="Color blindness filters">
         <p>
           You can apply correction filters for color blind people with our&nbsp;
@@ -11,8 +11,7 @@
             <a
               href="https://www.twicpics.com/docs/reference/transformations?utm_source=github&utm_medium=organic&utm_campaign=components#span-classexperimentalachromatopsiaspan"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <TwicCode>preTransform="achromatopsia=number"</TwicCode>
             </a>
           </li>
@@ -20,8 +19,7 @@
             <a
               href="https://www.twicpics.com/docs/reference/transformations?utm_source=github&utm_medium=organic&utm_campaign=components#span-classexperimentaldeuteranopiaspan"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <TwicCode>preTransform="deuteranopia=number"</TwicCode>
             </a>
           </li>
@@ -29,8 +27,7 @@
             <a
               href="https://www.twicpics.com/docs/reference/transformations?utm_source=github&utm_medium=organic&utm_campaign=components#span-classexperimentalprotanopiaspan"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <TwicCode>preTransform="protanopia=number"</TwicCode>
             </a>
           </li>
@@ -68,40 +65,40 @@
   </div>
 </template>
 <script>
-export default {
-  name: 'TwicColorBlindness',
-  data() {
-    return {
-      config: [
-        {
-          achromatopsia: 'achromatopsia=0.5',
-          deuteranopia: 'deuteranopia=0.5',
-          protanopia: 'protanopia=0.5',
-        },
-        {
-          achromatopsia: 'achromatopsia=1',
-          deuteranopia: 'deuteranopia=1',
-          protanopia: 'protanopia=1',
-        },
-        {
-          achromatopsia: 'achromatopsia=0',
-          deuteranopia: 'deuteranopia=0',
-          protanopia: 'protanopia=0',
-        },
-      ],
-      indiceConfig: 0,
-      IMG_URL: `components/color-blindless/umbrellas.jpg`,
-    }
-  },
-  computed: {
-    actualConfig() {
-      return this.config[this.indiceConfig]
+  export default {
+    name: "TwicColorBlindness",
+    data() {
+      return {
+        config: [
+          {
+            achromatopsia: "achromatopsia=0.5",
+            deuteranopia: "deuteranopia=0.5",
+            protanopia: "protanopia=0.5",
+          },
+          {
+            achromatopsia: "achromatopsia=1",
+            deuteranopia: "deuteranopia=1",
+            protanopia: "protanopia=1",
+          },
+          {
+            achromatopsia: "achromatopsia=0",
+            deuteranopia: "deuteranopia=0",
+            protanopia: "protanopia=0",
+          },
+        ],
+        indiceConfig: 0,
+        IMG_URL: `components/color-blindless/umbrellas.jpg`,
+      };
     },
-  },
-  methods: {
-    updateIndice() {
-      this.indiceConfig = (this.indiceConfig + 1) % this.config.length
+    computed: {
+      actualConfig() {
+        return this.config[this.indiceConfig];
+      },
     },
-  },
-}
+    methods: {
+      updateIndice() {
+        this.indiceConfig = (this.indiceConfig + 1) % this.config.length;
+      },
+    },
+  };
 </script>

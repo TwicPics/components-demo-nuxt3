@@ -1,6 +1,6 @@
 <template>
   <div id="twic-short-videos-container">
-    <TwicWrapper git-hub-url="pages/short-videos.vue">
+    <TwicWrapper filename="pages/short-videos.vue">
       <TwicAbstract title="Short Videos">
         <p>
           The ideal candidates for TwicPics video integration are hero videos,
@@ -60,8 +60,7 @@
             src="video/skater.mp4"
             intrinsic="1280x720"
             placeholder="preview"
-            ratio="16/9"
-          />
+            ratio="16/9" />
           <span>
             <TwicCode>ratio="16/9"</TwicCode>&<TwicCode>mode="cover"</TwicCode>:
             the video fills the area
@@ -73,8 +72,7 @@
             focus="center"
             intrinsic="1280x720"
             mode="cover"
-            placeholder="maincolor"
-          />
+            placeholder="maincolor" />
           <span> Default values </span>
         </div>
         <div class="twic-item">
@@ -83,8 +81,7 @@
             intrinsic="1280x720"
             placeholder="meancolor"
             mode="contain"
-            ratio="1"
-          />
+            ratio="1" />
           <span>
             <TwicCode>ratio="1"</TwicCode>&<TwicCode>mode="contain"</TwicCode>:
             the video sits inside the area
@@ -95,8 +92,7 @@
             src="video/skater.mp4"
             intrinsic="1280x720"
             placeholder="preview"
-            ratio="2/3"
-          />
+            ratio="2/3" />
           <span>
             <TwicCode>ratio="2/3"</TwicCode>,<TwicCode>mode="cover"</TwicCode>:
             the video fills the area
@@ -107,15 +103,15 @@
   </div>
 </template>
 <script>
-export default {
-  name: 'TwicShortVideo',
-}
+  export default {
+    name: "TwicShortVideo",
+  };
 </script>
 <style lang="scss">
-#twic-short-videos-container {
-  .twic-item .twic-w {
-    background-color: #00ffa3;
-    display: block;
+  #twic-short-videos-container {
+    .twic-item .twic-w {
+      background-color: #00ffa3;
+      display: block;
+    }
   }
-}
 </style>
