@@ -19,98 +19,99 @@
 </template>
 
 <script>
-export default {
-  name: 'TwicWrapper',
-  props: {
-    image: {
-      type: Object,
-      required: true,
+  export default {
+    name: "TwicWrapper",
+    props: {
+      image: {
+        type: Object,
+        required: true,
+      },
+      show: {
+        type: Boolean,
+        required: true,
+      },
+      onClose: {
+        type: Function,
+        required: true,
+      },
     },
-    show: {
-      type: Boolean,
-      required: true,
-    },
-    onClose: {
-      type: Function,
-      required: true,
-    },
-  },
-}
+  };
 </script>
 
 <style lang="scss">
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 130px;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 100px;
+    padding-top: 30px;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
 
-  /* Black w/ opacity */
-  &.modal-opened {
-    display: block;
-  }
-
-  .modal-content {
-    display: grid;
-    grid-template-columns: minmax(200px, 1fr);
-    grid-column-gap: 10px;
-    overflow-y: auto;
-    background-color: #fefefe;
-    margin: 1rem auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-
-    & .poster {
-      --twic-ratio: calc(1 / 1);
+    /* Black w/ opacity */
+    &.modal-opened {
+      display: block;
     }
 
-    & h1 {
-      text-transform: capitalize;
-      margin-bottom: 1rem;
-    }
-  }
-}
+    .modal-content {
+      display: grid;
+      grid-template-columns: minmax(200px, 1fr);
+      grid-column-gap: 10px;
+      overflow-y: auto;
+      background-color: #fefefe;
+      margin: 1rem auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
 
-.modal .modal-content {
-  @media (min-width: 480px) {
-    grid-template-columns: minmax(200px, 1fr);
+      & .poster {
+        --twic-ratio: calc(1 / 1);
+      }
 
-    & .poster {
-      --twic-ratio: calc(4 / 3);
+      & h1 {
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+      }
     }
   }
 
-  @media (min-width: 768px) {
-    grid-template-columns: minmax(300px, 1fr) 2fr;
+  .modal .modal-content {
+    @media (min-width: 480px) {
+      grid-template-columns: minmax(200px, 1fr);
 
-    & .poster {
-      --twic-ratio: calc(3 / 4);
+      & .poster {
+        --twic-ratio: calc(4 / 3);
+      }
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: minmax(300px, 1fr) 2fr;
+
+      & .poster {
+        --twic-ratio: calc(3 / 4);
+      }
+    }
+
+    @media (min-width: 1024px) {
+    }
+
+    @media (min-width: 1280px) {
+    }
+
+    @media (min-width: 1536px) {
+      width: 50%;
+      grid-template-columns: minmax(300px, 1fr) 1fr;
     }
   }
-
-  @media (min-width: 1024px) {
-  }
-
-  @media (min-width: 1280px) {
-  }
-
-  @media (min-width: 1536px) {
-    width: 50%;
-    grid-template-columns: minmax(300px, 1fr) 1fr;
-  }
-}
 </style>
