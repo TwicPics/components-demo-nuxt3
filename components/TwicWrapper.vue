@@ -63,7 +63,7 @@
       return {
         onlineUrl: ``,
         documentationUrl: `https://www.twicpics.com/docs/components/nuxt-3?utm_source=github&utm_medium=organic&utm_campaign=components`,
-        frameworkLogo: `https://assets.twicpics.com/demo/@twicpics-components/logos/nuxt-3.png`,
+        frameworkLogo: `https://assets.twicpics.com/demo/@twicpics-components/logos/nuxt-3.svg`,
         gitHubLogo: `/github-mark-white.svg`,
         gitHubUrl: ``,
         stackBlitzLogo: `/stackblitz.svg`,
@@ -142,9 +142,9 @@
       width: 140px;
     }
     & .framework-logo {
-      aspect-ratio: 132/32;
+      aspect-ratio: 132/30;
       width: 132px;
-      margin-bottom: 7px;
+      margin-bottom: 5px;
     }
     & .tags-container {
       bottom: 0;
