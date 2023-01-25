@@ -199,9 +199,6 @@
     }
 
     .twic-item {
-      & img {
-        transition: 0.3s all ease-in-out;
-      }
       &:hover {
         & img.twic-done {
           transform: scale(1.1) !important;
