@@ -4,7 +4,12 @@
       <TwicAbstract title="CSS style driven">
         <p>
           You can set up the TwicPics components using pure CSS and the power of
-          CSS variables.
+          <a
+            href="https://www.twicpics.com/docs/components/sveltekit#css-variables"
+            target="_blank"
+            rel="noreferrer"
+            >CSS variable</a
+          >.
         </p>
       </TwicAbstract>
       <p>
@@ -35,7 +40,36 @@
         </div>
       </div>
       <p>
-        <b>2.</b> Class combination: you can set up multiples props
+        <b>2.</b> Set up
+        <a href="/zoom" target="_blank" rel="noreferrer">zoom</a> value with
+        <TwicCode>--twic-zoom</TwicCode> css variable.
+      </p>
+      <br />
+      <div class="twic-grid">
+        <div class="twic-item zoom-sm">
+          <TwicImg :src="IMG_URL" zoom="CSS" />
+          <span>
+            class
+            <TwicCode>zoom-sm</TwicCode>
+          </span>
+        </div>
+        <div class="twic-item zoom-md">
+          <TwicImg :src="IMG_URL" zoom="CSS" />
+          <span>
+            class
+            <TwicCode>zoom-md</TwicCode>
+          </span>
+        </div>
+        <div class="twic-item zoom-lg">
+          <TwicImg :src="IMG_URL" zoom="CSS" />
+          <span>
+            class
+            <TwicCode>zoom-lg</TwicCode>
+          </span>
+        </div>
+      </div>
+      <p>
+        <b>3.</b> Class combination: you can set up multiples props
         as<TwicCode>object-fit</TwicCode>and <TwicCode>position</TwicCode>with
         <TwicCode>--twic-mode</TwicCode>and
         <TwicCode>twic-position</TwicCode>
@@ -67,7 +101,7 @@
         </div>
       </div>
       <p>
-        <b>3.</b> Other classical settings (here with
+        <b>4.</b> Other classical settings (here with
         <TwicCode>width</TwicCode>)
       </p>
       <br />
@@ -147,6 +181,15 @@
     }
     .sm {
       width: 100px;
+    }
+    .zoom-sm {
+      --twic-zoom: 1.5;
+    }
+    .zoom-md {
+      --twic-zoom: 2;
+    }
+    .zoom-lg {
+      --twic-zoom: 3;
     }
   }
 </style>
