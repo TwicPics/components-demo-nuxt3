@@ -204,6 +204,10 @@
     }
 
     .twic-item {
+      background-color: #ffffff;
+    }
+
+    .twic-item {
       &:hover {
         & img.twic-done {
           transform: scale(1.1) !important;
@@ -221,7 +225,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 12px;
         height: 40px;
         text-align: center;
         font-size: 1em;

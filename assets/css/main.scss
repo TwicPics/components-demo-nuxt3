@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #5b595c;
 }
 
@@ -42,7 +42,7 @@ body {
   gap: 4px;
   cursor: pointer;
   padding: 8px 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   border: none;
   border-radius: 4px;
@@ -55,7 +55,7 @@ body {
   }
 
   &:before {
-    content: url('assets/images/cursor-click.svg');
+    content: url("assets/images/cursor-click.svg");
     width: 20px;
     height: 20px;
   }
@@ -67,7 +67,7 @@ body {
 
 .twic-item {
   position: relative;
-  padding: 12px;
+  border: solid 12px #ffffff;
   border-radius: 6px;
   box-shadow: 0 2px 9px 0 rgb(39 37 63 / 15%);
 
@@ -79,14 +79,12 @@ body {
 
   & > span {
     display: block;
-    margin-top: 12px;
-    padding: 6px 12px;
+    padding: 12px 12px 6px 12px;
     font-size: 0.8em;
     font-weight: 400;
     background-color: #f2f2f2;
   }
 }
-
 .twic-panel {
   background-color: #f9fafb;
   border: 1px solid #e3e3e4;

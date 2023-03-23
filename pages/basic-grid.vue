@@ -86,12 +86,3 @@
     name: "TwicBasicExample",
   };
 </script>
-
-<style lang="scss">
-  #twic-basic-grid-container {
-    .twic-item .twic-w {
-      background-color: #00ffa3;
-      display: block;
-    }
-  }
-</style>

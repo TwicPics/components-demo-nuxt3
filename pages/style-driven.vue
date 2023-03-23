@@ -148,10 +148,6 @@
     .twic-grid {
       margin-bottom: 60px;
     }
-    .twic-item .twic-w {
-      background-color: #00ffa3;
-      display: block;
-    }
     .landscape {
       --twic-ratio: calc(4 / 3);
     }
