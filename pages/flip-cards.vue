@@ -9,7 +9,7 @@
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <figure class="twic-item">
-                <TwicImg :src="`video/${card.front.url}`" focus="auto"></TwicImg>
+                <TwicImg :src="card.front.url" focus="auto"></TwicImg>
               </figure>
             </div>
             <div class="flip-card-back">
