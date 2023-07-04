@@ -16,6 +16,7 @@
                 v-if="item.imgSrc"
                 :src="item.imgSrc"
                 :focus="item.focus ? item.focus : 'auto'"
+                :refit="item.refit ? item.refit : false"
                 ratio="0.95"></TwicImg>
               <TwicVideo
                 v-else
@@ -169,6 +170,13 @@
                 imgSrc: `components/woman-and-winter.jpg`,
                 focus: `50px50p`,
                 title: `ratio`,
+              },
+              {
+                route: `/refit`,
+                imgSrc: `components/refit/dog-looking-water.jpg`,
+                focus: `50px50p`,
+                refit: `5p`,
+                title: `refit`,
               },
               {
                 route: `/state`,

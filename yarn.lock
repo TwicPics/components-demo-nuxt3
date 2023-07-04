@@ -917,10 +917,8 @@
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
-"@twicpics/components@0.17.3":
-  version "0.17.3"
-  resolved "https://registry.yarnpkg.com/@twicpics/components/-/components-0.17.3.tgz#94740ef8f802b659da5fc92e5bb50af711bd3e39"
-  integrity sha512-alKDwCjIf8yviq8j6PtbJwehdAPBy6dxvsXMLvkhC9jOjumBYWPRDN0wk3sAthPbsRBc6i/0Bj3fhThRFp/Dxg==
+"@twicpics/components@0.20.0":
+  version "0.20.0"
 
 "@types/estree@*", "@types/estree@^1.0.0":
   version "1.0.0"
