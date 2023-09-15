@@ -7,6 +7,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
+    "start": "nuxt start",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -14,7 +15,7 @@
     "serve": "nuxt dev"
   },
   "devDependencies": {
-    "nuxt": "3.7.3",
+    "nuxt": "3.7.0",
     "sass": "^1.63.6"
   },
   "dependencies": {
