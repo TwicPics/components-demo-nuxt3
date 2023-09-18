@@ -13,7 +13,7 @@ export default defineNuxtConfig({
       {
         domain: `https://demo.twic.pics`,
         anticipation: 0.5,
-        step: 100,
+        step: 100
       },
     ],
   ],

@@ -5,7 +5,7 @@
         <h1 class="heading-primary">
           <img
             class="twicpics-logo"
-            src="https://assets.twicpics.com/demo/@twicpics-components/logos/twicpics.svg"
+            src="https://assets.twicpics.com/demo/@twicpics-components/logos/twicpics-by-frontify.svg"
             alt="TwicPics logo" />
           <span>x</span>
           <img class="framework-logo" :src="frameworkLogo" alt="React Logo" />
@@ -121,7 +121,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     border-bottom: 1px solid #e3e3e4;
     background-color: $bg-color;
     z-index: 10;
@@ -138,14 +138,19 @@
       font-weight: 400;
     }
     & .twicpics-logo {
-      aspect-ratio: 140/39;
-      width: 140px;
+      aspect-ratio: 300/58;
+      width: 165px;
+      @media (min-width: 640px) {
+        width: 250px;
+      }
     }
     & .framework-logo {
-      aspect-ratio: 132/30;
-      width: 132px;
-      margin-bottom: 5px;
+    aspect-ratio: 2560/753;
+    width: 86px;
+    @media (min-width: 640px) {
+      width: 130px;
     }
+  }
     & .tags-container {
       bottom: 0;
       display: flex;
@@ -231,6 +236,9 @@
           }
         }
       }
+    }
+    @media (min-width: 640px) {
+      padding:20px;
     }
   }
 </style>
