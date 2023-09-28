@@ -11,10 +11,10 @@ export default defineNuxtConfig({
     [
       `@twicpics/components/nuxt3`,
       {
-        domain: process.env.NUXT_TWICPICS_DOMAIN || `https://demo.twic.pics`,
+        domain: `https://demo.twic.pics`,
         anticipation: 0.5,
         step: 100
       },
     ],
   ],
-})
+});
