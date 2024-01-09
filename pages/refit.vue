@@ -34,7 +34,7 @@
       </p>
       <p>
         <a
-          href="https://www.twicpics.com/blog/discover-the-refit-transformation?utm_source=github&utm_medium=organic&utm_campaign=components#span-classexperimentalachromatopsiaspan"
+          href="https://www.twicpics.com/blog/components-feature-refit"
           target="_blank"
           rel="noreferrer"
         >

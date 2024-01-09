@@ -15,8 +15,8 @@
     "serve": "nuxt dev"
   },
   "devDependencies": {
-    "nuxt": "3.7.4",
-    "sass": "^1.68.0"
+    "nuxt": "3.9.1",
+    "sass": "^1.69.7"
   },
   "dependencies": {
     "@twicpics/components": "../../components/dist"
