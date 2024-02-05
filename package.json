@@ -19,6 +19,6 @@
     "sass": "^1.69.7"
   },
   "dependencies": {
-    "@twicpics/components": "0.27.1"
+    "@twicpics/components": "0.27.2"
   }
 }
