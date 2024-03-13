@@ -25,12 +25,12 @@
         <p>
           It operates independently of <a
             target="_blank"
-            href="https://www.twicpics.com/docs/essentials/script"
+            href="https://www.twicpics.com/docs/essentials/native"
           >
             TwicPics Script
           </a> and dynamically generates <TwicCode>source</TwicCode> elements and <TwicCode>srcset</TwicCode> attributes from a <b>single master file</b> using variants transformed through <a
             target="_blank"
-            href="https://www.twicpics.com/docs/guides/writing-api-requests">TwicPics API</a>.
+            href="https://www.twicpics.com/docs/essentials/api">TwicPics API</a>.
         </p>
         <p>
           Want to know more? <a
