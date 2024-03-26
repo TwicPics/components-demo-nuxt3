@@ -15,10 +15,10 @@
     "serve": "nuxt dev"
   },
   "devDependencies": {
-    "nuxt": "3.10.0",
-    "sass": "^1.69.7"
+    "nuxt": "3.11.1",
+    "sass": "^1.72.0"
   },
   "dependencies": {
-    "@twicpics/components": "0.28"
+    "@twicpics/components": "0.28.1"
   }
 }
