@@ -19,7 +19,7 @@
     "sass": "^1.77.6"
   },
   "dependencies": {
-    "@twicpics/components": "0.29.3"
+    "@twicpics/components": "0.30.0"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
