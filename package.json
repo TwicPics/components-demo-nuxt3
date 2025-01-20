@@ -15,11 +15,11 @@
     "serve": "nuxt dev"
   },
   "devDependencies": {
-    "nuxt": "3.12.2",
-    "sass": "^1.77.6"
+    "nuxt": "3.15.2",
+    "sass": "^1.83.4"
   },
   "dependencies": {
-    "@twicpics/components": "0.31.1"
+    "@twicpics/components": "0.31.2"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
