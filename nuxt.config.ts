@@ -6,7 +6,9 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
     }
   },
+
   css: ['@/assets/css/main.scss'],
+
   modules: [
     [
       `@twicpics/components/nuxt3`,
@@ -17,4 +19,6 @@ export default defineNuxtConfig({
       },
     ],
   ],
+
+  compatibilityDate: '2025-03-21',
 });

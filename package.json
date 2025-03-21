@@ -15,7 +15,7 @@
     "serve": "nuxt dev"
   },
   "devDependencies": {
-    "nuxt": "3.15.2",
+    "nuxt": "3.16.1",
     "sass": "^1.83.4"
   },
   "dependencies": {
